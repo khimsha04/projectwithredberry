@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.d-flexcenter {
+  display: flex;
+  justify-content: center;
+}
+.bodycontainer {
+  width: 100%;
+  max-width: 1824px;
+}
+.logoredberry {
+  width: 100%;
+  max-width: 112px;
+  height: 18px;
+  margin-top: 38px;
+  margin-left: calc(50% - 112px / 2);
+}
+.photogroup1 {
+  height: 382px;
+  width: 600px;
+  margin-left: 398px;
+  margin-top: 40px;
+  border-radius: 0px;
+}
+.button1 {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: #62a1eb;
+  border: none;
+  border-radius: 8px;
+  gap: 20px;
+  margin-left: 536px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.button2 {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: #62a1eb;
+  border: none;
+  border-radius: 8px;
+  gap: 20px;
+  margin-left: 536px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.ellipse1 {
+  width: 53px;
+  height: 53px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 50%;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.info {
+  margin-right: 30px;
+  position: relative;
+}
+.hoverblackline {
+  position: absolute;
+  left: 500px;
+  top: 130px;
+  width: 134px;
+  height: 2px;
+  background-color: black;
+  opacity: 0;
+}
+
+.hoverblackline:hover .hoverblackline {
+  opacity: 1;
+}
+.hoverblackline2 {
+  position: absolute;
+  left: 688px;
+  top: 130px;
+  width: 178px;
+  height: 2px;
+  background-color: black;
+  opacity: 0;
+}
