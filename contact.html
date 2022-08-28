@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>PROCEJTWITHREDBERRY</title>
   </head>
   <body>
@@ -26,5 +27,27 @@
         </div>
       </div>
     </section>
+    <section class="from-section">
+      <form class="form" action="/save-user" novalidate>
+        <div class="from-container">
+          <div class="d-flex">
+            <div class="input-field">
+              <label for="username">სახელი</label>
+              <input type="text" id="username" placeholder="სახელი" equired />
+              <span class="minsimbols">მინიმუმ 2 სიმბოლო,ქართული ასოებით</span>
+              <span class="error-message" id="username-error"></span>
+            </div>
+
+            <div class="input-field1">
+              <label for="surname">გვარი</label>
+              <input type="text" id="surname" placeholder="გვარი" required />
+              <span class="minsimbols">მინიმუმ 2 სიმბოლო,ქართული ასოებით</span>
+              <span class="error-message" id="email-error"></span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="js/main.js"></script>
   </body>
 </html>

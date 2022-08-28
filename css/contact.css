@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #dddddd;
+}
+.ellipse1 {
+  width: 53px;
+  height: 53px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 50%;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.info {
+  margin-right: 30px;
+  position: relative;
+}
+.hoverblackline {
+  position: absolute;
+  left: 500px;
+  top: 130px;
+  width: 134px;
+  height: 2px;
+  background-color: black;
+  opacity: 0;
+}
+
+.hoverblackline:hover .hoverblackline {
+  opacity: 1;
+}
+.hoverblackline2 {
+  position: absolute;
+  left: 688px;
+  top: 130px;
+  width: 178px;
+  height: 2px;
+  background-color: black;
+  opacity: 0;
+}
+.from-container {
+  width: 100%;
+  max-width: 926px;
+  margin: 0 auto;
+}
+.form {
+  width: 100%;
+  max-width: 1226px;
+  height: 973px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+.input-field {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 88px;
+}
+.input-field1 {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 150px; */
+  padding-top: 88px;
+}
+#username {
+  width: 100%;
+  max-width: 407px;
+  height: 60px;
+  border: 1.8px solid blue;
+  border-radius: 8px;
+}
+#surname {
+  width: 100%;
+  max-width: 407px;
+  height: 60px;
+  border: 1.8px solid blue;
+  border-radius: 8px;
+}
+.minsimbols {
+  font-size: 14px;
+  color: gray;
+}
