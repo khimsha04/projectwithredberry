@@ -45,8 +45,54 @@
               <span class="error-message" id="email-error"></span>
             </div>
           </div>
+          <div>
+            <select name="options" id="menu1">
+              <option class="menu1value" value="team">თიმი</option>
+              <option class="menu1value" value="development">
+                დეველოპმენტი
+              </option>
+              <option class="menu1value" value="HR">HR</option>
+              <option class="menu1value" value="Buys">გაყიდვები</option>
+              <option class="menu1value" value="design">დიზაინი</option>
+              <option class="menu1value" value="marketing">მარკეტინგი</option>
+            </select>
+          </div>
+          <div>
+            <select name="poziton" id="menu2">
+              <option class="menu1value" value="pozition">პოზიცია</option>
+            </select>
+          </div>
+          <div>
+            <div class="input-field3">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Example@redberry.ge"
+                equired
+              />
+              <span class="minsimbols">უნდა მთავრდებოდეს @redberry.ge-ით</span>
+              <span class="error-message" id="username-error"></span>
+            </div>
+          </div>
+          <div>
+            <div class="input-field4">
+              <label for="number">ტელეფონის ნომერი</label>
+              <input
+                type="number"
+                id="telnumber"
+                placeholder="+995 598 00 00 00"
+                minlength="12"
+              />
+              <span class="minsimbols"
+                >უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</span
+              >
+              <span class="error-message" id="telnumber-error"></span>
+            </div>
+          </div>
         </div>
       </form>
+      <a href="blog.html"><button class="next">შემდეგი</button></a>
     </section>
     <script src="js/main.js"></script>
   </body>

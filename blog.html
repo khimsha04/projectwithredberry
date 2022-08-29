@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>PROCEJTWITHREDBERRY</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <a href="index.html">
+          <img class="ellipse1" src="images/Group 4.png" alt="photo" />
+        </a>
+      </div>
+
+      <div class="d-flexcenter">
+        <div>
+          <a class="info" href="#">თანამშრომლის ინფო</a>
+          <div class="hoverblackline"></div>
+        </div>
+        <div>
+          <a href="#">ლეპტოპის მახასიათებლები</a>
+          <div class="hoverblackline2"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <form class="form" action="/save-user" novalidate>
+        <div class="from-container">
+          <div>
+            <span for="myfile">Select a file:</span>
+            <input type="file" id="myfile" name="myfile" />
+          </div>
+          <div class="d-flex">
+            <div class="input-field">
+              <label for="username"> ლეპტოპის სახელი</label>
+              <input type="text" id="username" placeholder="HP" equired />
+              <span class="minsimbols"
+                >ლათინური ასოები, ციფრები, !@#$%^&*()_+=
+              </span>
+              <span class="error-message" id="username-error"></span>
+            </div>
+
+            <div>
+              <select name="options" id="menu3">
+                <option class="menu1value" value="team">ლეპტოპის ბრენდი</option>
+              </select>
+            </div>
+          </div>
+          <div class="grayline"></div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
