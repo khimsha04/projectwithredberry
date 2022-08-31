@@ -28,11 +28,44 @@
       </div>
     </section>
     <section>
-      <form class="form" action="/save-user" novalidate>
+      <form class="form2" action="/save-user" novalidate>
         <div class="from-container">
           <div>
             <span for="myfile">Select a file:</span>
             <input type="file" id="myfile" name="myfile" />
+          </div>
+          <div class="d-flex">
+            <div class="input-field">
+              <label for="username"> ლეპტოპის სახელი</label>
+              <input type="text" id="username" placeholder="HP" equired />
+
+              <span class="error-message" id="username-error"></span>
+            </div>
+            <div>
+              <select name="options" id="menu3">
+                <option class="menu1value" value="team">ლეპტოპის ბრენდი</option>
+              </select>
+            </div>
+          </div>
+          <div class="grayline"></div>
+          <div class="d-flex">
+            <div>
+              <select name="options" id="menu4">
+                <option class="menu1value" value="team">CPU</option>
+              </select>
+            </div>
+            <div class="input-field-CPU-S">
+              <label for="username">CPU-ს ბირთვი</label>
+              <input type="text" id="CPU-S" placeholder="14" equired />
+              <span class="minsimbols">მხოლოდ ციფრები </span>
+              <span class="error-message" id="username-error"></span>
+            </div>
+            <div class="input-field-CPU-S">
+              <label for="username">CPU-ს ნაკადი</label>
+              <input type="text" id="CPU-S" placeholder="365" equired />
+              <span class="minsimbols">მხოლოდ ციფრები </span>
+              <span class="error-message" id="username-error"></span>
+            </div>
           </div>
           <div class="d-flex">
             <div class="input-field">
@@ -43,16 +76,76 @@
               </span>
               <span class="error-message" id="username-error"></span>
             </div>
+            <div class="d-flex input-field-memory">
+              <label for="memory">მეხსეიერების ტიპი</label>
+              <div class="d-flex">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  name="memory"
+                  value="memory"
+                  equired
+                />
 
-            <div>
-              <select name="options" id="menu3">
-                <option class="menu1value" value="team">ლეპტოპის ბრენდი</option>
-              </select>
+                <label for="memory">SSD</label>
+
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  name="memory"
+                  value="memory"
+                  equired
+                />
+                <label for="memory">HDD</label>
+              </div>
             </div>
           </div>
           <div class="grayline"></div>
+          <div class="d-flex">
+            <div class="f-flex input-field">
+              <label for="date">შეძენის რიცხვი(არჩევითი)</label>
+              <input type="text" id="date" placeholder="დდ/თთ/წწწ" />
+            </div>
+            <div class="f-flex input-field">
+              <label for="date">ლეპტოპის ფასი</label>
+              <input type="text" id="date" placeholder="0000" />
+              <span class="minsimbols">მხოლოდ ციფრები </span>
+            </div>
+          </div>
+          <div class="d-flex input-field-memory">
+            <label for="memory">ლეპტოპის მდგომარეობა</label>
+            <div class="d-flex">
+              <input
+                type="checkbox"
+                id="checkbox"
+                name="memory"
+                value="memory"
+                equired
+              />
+
+              <label for="memory">ახალი</label>
+
+              <input
+                type="checkbox"
+                id="checkbox"
+                name="memory"
+                value="memory"
+                equired
+              />
+              <label for="memory">მეორეადი</label>
+            </div>
+          </div>
         </div>
       </form>
+      <div>
+        <a class="back" href="contact.html">უკან</a>
+
+        <a href="popup.html"
+          ><button class="save-button">დამახსოვრება</button></a
+        >
+      </div>
+
+      <img src="images/LOGO-10 2.png" alt="logo" class="logo-last" />
     </section>
   </body>
 </html>

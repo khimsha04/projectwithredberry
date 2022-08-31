@@ -140,6 +140,15 @@ body {
 .red {
   color: red;
 }
+.form2 {
+  width: 100%;
+  max-width: 1226px;
+  height: 1571px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 42px;
+}
 .next {
   width: 176px;
   height: 60px;
@@ -171,4 +180,79 @@ body {
   height: 5px;
   background-color: #f6f6f6;
   margin-top: 44px;
+}
+#menu4 {
+  width: 276px;
+  height: 76px;
+  margin-top: 85px;
+  border: none;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+#CPU-S {
+  height: 60px;
+  border: 1.8px solid blue;
+  border-radius: 8px;
+}
+.input-field-CPU-S {
+  width: 100%;
+  max-width: 276px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 88px;
+}
+.d-flex-S {
+  display: flex;
+  align-items: center;
+}
+#checkbox {
+  border: 1.8px solid blue;
+  border-radius: 8px;
+}
+.input-field-memory {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 88px;
+}
+#date {
+  height: 60px;
+  border: 1.8px solid blue;
+  border-radius: 8px;
+}
+.last-compnent-form2 {
+  margin-top: 97px;
+}
+.back {
+  position: absolute;
+  top: 1670px;
+  left: 212px;
+  color: blue;
+}
+.save-button {
+  width: 219px;
+  height: 60px;
+  background-color: #62a1eb;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  right: 16%;
+  top: 1650px;
+}
+.logo-last {
+  margin-left: 44%;
+  margin-top: 40px;
+}
+.section-modal {
+  width: 100%;
+  max-width: 847px;
+  height: 537px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
 }
