@@ -31,7 +31,9 @@
       <form class="form2" action="/save-user" novalidate>
         <div class="from-container">
           <div>
-            <span for="myfile">Select a file:</span>
+            <span class="form-file" for="myfile"
+              >ჩააგდე ან ატვირთე ლეპტოპის ფოტო</span
+            >
             <input type="file" id="myfile" name="myfile" />
           </div>
           <div class="d-flex">
@@ -77,26 +79,30 @@
               <span class="error-message" id="username-error"></span>
             </div>
             <div class="d-flex input-field-memory">
-              <label for="memory">მეხსეიერების ტიპი</label>
+              <label class="memory-tip" for="memory">მეხსეიერების ტიპი</label>
               <div class="d-flex">
-                <input
-                  type="checkbox"
-                  id="checkbox"
-                  name="memory"
-                  value="memory"
-                  equired
-                />
+                <div>
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="memory"
+                    value="memory"
+                    equired
+                  />
 
-                <label for="memory">SSD</label>
+                  <label for="memory">SSD</label>
+                </div>
 
-                <input
-                  type="checkbox"
-                  id="checkbox"
-                  name="memory"
-                  value="memory"
-                  equired
-                />
-                <label for="memory">HDD</label>
+                <div class="marginleft100px">
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="memory"
+                    value="memory"
+                    equired
+                  />
+                  <label for="memory">HDD</label>
+                </div>
               </div>
             </div>
           </div>
@@ -113,7 +119,7 @@
             </div>
           </div>
           <div class="d-flex input-field-memory">
-            <label for="memory">ლეპტოპის მდგომარეობა</label>
+            <label class="memory" for="memory">ლეპტოპის მდგომარეობა</label>
             <div class="d-flex">
               <input
                 type="checkbox"
@@ -125,14 +131,16 @@
 
               <label for="memory">ახალი</label>
 
-              <input
-                type="checkbox"
-                id="checkbox"
-                name="memory"
-                value="memory"
-                equired
-              />
-              <label for="memory">მეორეადი</label>
+              <div class="marginleft100px">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  name="memory"
+                  value="memory"
+                  equired
+                />
+                <label for="memory">მეორეადი</label>
+              </div>
             </div>
           </div>
         </div>

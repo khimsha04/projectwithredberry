@@ -215,6 +215,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 88px;
+  padding-right: 120px;
 }
 #date {
   height: 60px;
@@ -255,4 +256,63 @@ body {
   border: none;
   border-radius: 8px;
   background-color: #ffffff;
+}
+* button {
+  cursor: pointer;
+  font-size: 25px;
+}
+.imagepopup {
+  width: 100%;
+  max-width: 137.46px;
+  height: 218.21px;
+}
+.modal-first-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-second-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 79px;
+}
+.button-list {
+  width: 297px;
+  height: 60px;
+  border: none;
+  background-color: #62a1eb;
+  border-radius: 8px;
+  color: white;
+  font-size: 25px;
+}
+.general {
+  width: 100%;
+  max-width: 88px;
+  height: 24px;
+  font-size: 20px;
+  color: #0089a7;
+  margin-top: 28px;
+}
+section div span {
+  font-size: 25px;
+}
+.form-file {
+  width: 195px;
+  height: 76px;
+  font-size: 20px;
+  color: #4386a9;
+}
+.marginleft100px {
+  margin-left: 100px;
+}
+.memory-tip {
+  font-size: 20px;
+  margin: 10px;
+  width: 200px;
+}
+.memory {
+  font-size: 20px;
+  margin: 10px;
+  width: 250px;
 }
