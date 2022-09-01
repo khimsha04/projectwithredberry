@@ -29,6 +29,12 @@
   margin-top: 85px;
   border-radius: 0px;
 }
+.responsivecomputer {
+  display: none;
+  width: 268.58px;
+  height: 349px;
+  margin: 0 auto;
+}
 .button1 {
   width: 100%;
   max-width: 387px;

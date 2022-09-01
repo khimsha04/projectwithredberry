@@ -9,7 +9,7 @@ body {
   width: 100%;
   max-width: 1920px;
 }
-.ellipse1 {
+.ellipse2 {
   width: 53px;
   height: 53px;
   background-color: #d9d9d9;
@@ -17,6 +17,10 @@ body {
   border-radius: 50%;
   margin-left: 70px;
   margin-top: 50px;
+}
+.d-flexcenter8 {
+  display: flex;
+  justify-content: center;
 }
 .container-otherinfo {
   width: 100%;
