@@ -6,6 +6,12 @@
   list-style: none;
   color: black;
 }
+button:hover {
+  color: pink;
+}
+a:hover {
+  color: pink;
+}
 .d-flexcenter {
   display: flex;
   justify-content: center;
