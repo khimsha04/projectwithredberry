@@ -138,7 +138,7 @@ body {
   border-radius: 8px;
 }
 .red {
-  color: red;
+  border: 1px solid red !important;
 }
 .form2 {
   width: 100%;

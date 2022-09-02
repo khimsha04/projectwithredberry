@@ -33,22 +33,20 @@
         <div class="from-container">
           <div class="d-flex">
             <div class="input-field">
-              <label for="username">სახელი</label>
+              <label class="label" for="username">სახელი</label>
               <input type="text" id="username" placeholder="სახელი" equired />
               <span class="minsimbols">მინიმუმ 2 სიმბოლო,ქართული ასოებით</span>
-              <span class="error-message" id="username-error"></span>
             </div>
 
             <div class="input-field1">
               <label for="surname">გვარი</label>
               <input type="text" id="surname" placeholder="გვარი" required />
               <span class="minsimbols">მინიმუმ 2 სიმბოლო,ქართული ასოებით</span>
-              <span class="error-message" id="email-error"></span>
             </div>
           </div>
           <div>
             <select name="options" id="menu1">
-              <option class="menu1value" value="team">თიმი</option>
+              <option class="menu1value" value="-1">თიმი</option>
               <option class="menu1value" value="development">
                 დეველოპმენტი
               </option>
@@ -61,6 +59,10 @@
           <div>
             <select name="poziton" id="menu2">
               <option class="menu1value" value="pozition">პოზიცია</option>
+              <option class="menu1value" value="HR">ინტერნი</option>
+              <option class="menu1value" value="Buys">
+                HR ბიზნეს დეველოპერი
+              </option>
             </select>
           </div>
           <div>
@@ -93,7 +95,7 @@
           </div>
         </div>
       </form>
-      <a href="blog.html"><button class="next">შემდეგი</button></a>
+      <button class="next">შემდეგი</button>
 
       <img src="images/LOGO-10 2.png" alt="logo" class="logo-last" />
     </section>
