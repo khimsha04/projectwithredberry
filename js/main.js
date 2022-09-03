@@ -6,7 +6,41 @@ const position = document.getElementById("menu2");
 const email = document.getElementById("email");
 const telNumber = document.getElementById("telnumber");
 
-const alfabet = ["ა", "ბ", "გ", "დ"];
+const alfabet = [
+  "ა",
+  "ბ",
+  "გ",
+  "დ",
+  "ე",
+  "ვ",
+  "ზ",
+  "თ",
+  "ი",
+  "კ",
+  "ლ",
+  "მ",
+  "ნ",
+  "ო",
+  "პ",
+  "ჯ",
+  "რ",
+  "ს",
+  "ტ",
+  "უ",
+  "ფ",
+  "ქ",
+  "ღ",
+  "შ",
+  "ჩ",
+  "ც",
+  "ძ",
+  "წ",
+  "ჭ",
+  "ხ",
+  "ჯ",
+  "ჰ",
+];
+
 nextButton.addEventListener("click", function () {
   hideErrorMessages();
   let usernameValue = username.value;
@@ -78,23 +112,3 @@ function isAlfabetVallid(stringValue) {
   }
   return true;
 }
-
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://pcfy.redberryinternship.ge/api/teams");
-    xhr.onloadend = function () {
-      let response = JSON.parse(xhr.response);
-      for (i = 0; i < response.data.length; i++) {
-        let tempdocument = document.createElement("option");
-        tempdocument.classList.add("menu1value");
-        tempdocument.value = response.data[i].id;
-        tempdocument.innerText = response.data[i].name;
-        team.append(tempdocument);
-      }
-    };
-    xhr.send();
-  },
-  false
-);

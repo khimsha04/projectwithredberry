@@ -20,7 +20,6 @@
       <div class="d-flexcenter">
         <div>
           <a class="info" href="#">თანამშრომლის ინფო</a>
-          <div class="hoverblackline"></div>
         </div>
         <div>
           <a href="#">ლეპტოპის მახასიათებლები</a>
@@ -31,18 +30,15 @@
     <section>
       <form class="form2" action="/save-user" novalidate>
         <div class="from-container">
-          <div>
-            <span class="form-file" for="myfile"
-              >ჩააგდე ან ატვირთე ლეპტოპის ფოტო</span
-            >
-            <input type="file" id="myfile" name="myfile" />
+          <div id="myfile">
+            <img src="images/warning.png" class="warning" alt="photo" />
+            <span class="form-file">ჩააგდე ან ატვირთე ლეპტოპის ფოტო</span>
+            <button id="button-upload">ატვირთე</button>
           </div>
           <div class="d-flex">
             <div class="input-field">
               <label for="username"> ლეპტოპის სახელი</label>
-              <input type="text" id="username" placeholder="HP" equired />
-
-              <span class="error-message" id="username-error"></span>
+              <input type="text" id="laptopname" placeholder="HP" equired />
             </div>
             <div>
               <select name="options" id="menu3">
@@ -59,25 +55,22 @@
             </div>
             <div class="input-field-CPU-S">
               <label for="username">CPU-ს ბირთვი</label>
-              <input type="text" id="CPU-S" placeholder="14" equired />
+              <input type="number" id="CPU-S" placeholder="14" equired />
               <span class="minsimbols">მხოლოდ ციფრები </span>
-              <span class="error-message" id="username-error"></span>
             </div>
             <div class="input-field-CPU-S">
               <label for="username">CPU-ს ნაკადი</label>
-              <input type="text" id="CPU-S" placeholder="365" equired />
+              <input type="number" id="cpustream" placeholder="365" equired />
               <span class="minsimbols">მხოლოდ ციფრები </span>
-              <span class="error-message" id="username-error"></span>
             </div>
           </div>
           <div class="d-flex">
             <div class="input-field">
-              <label for="username"> ლეპტოპის სახელი</label>
-              <input type="text" id="username" placeholder="HP" equired />
+              <label for="username"> ლეპტოპის RAM (GB)</label>
+              <input type="text" id="laptopram" placeholder="HP" equired />
               <span class="minsimbols"
                 >ლათინური ასოები, ციფრები, !@#$%^&*()_+=
               </span>
-              <span class="error-message" id="username-error"></span>
             </div>
             <div class="d-flex input-field-memory">
               <label class="memory-tip" for="memory">მეხსეიერების ტიპი</label>
@@ -111,11 +104,11 @@
           <div class="d-flex">
             <div class="f-flex input-field">
               <label for="date">შეძენის რიცხვი(არჩევითი)</label>
-              <input type="text" id="date" placeholder="დდ/თთ/წწწ" />
+              <input type="number" id="date" placeholder="დდ/თთ/წწწ" />
             </div>
             <div class="f-flex input-field">
-              <label for="date">ლეპტოპის ფასი</label>
-              <input type="text" id="date" placeholder="0000" />
+              <label for="price">ლეპტოპის ფასი</label>
+              <input type="number" id="price" placeholder="0000" />
               <span class="minsimbols">მხოლოდ ციფრები </span>
             </div>
           </div>
@@ -156,5 +149,9 @@
 
       <img src="images/LOGO-10 2.png" alt="logo" class="logo-last" />
     </section>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+    r
   </body>
 </html>

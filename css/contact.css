@@ -31,25 +31,22 @@ body {
 }
 .hoverblackline {
   position: absolute;
-  left: 500px;
-  top: 130px;
+  left: 490px;
+  top: 134px;
   width: 134px;
   height: 2px;
   background-color: black;
-  opacity: 0;
-}
-
-.hoverblackline:hover .hoverblackline {
   opacity: 1;
 }
+
 .hoverblackline2 {
   position: absolute;
-  left: 688px;
-  top: 130px;
+  left: 678px;
+  top: 135px;
   width: 178px;
   height: 2px;
   background-color: black;
-  opacity: 0;
+  opacity: 1;
 }
 .from-container {
   width: 100%;
@@ -80,7 +77,15 @@ body {
   /* padding-left: 150px; */
   padding-top: 88px;
 }
-#username {
+#username,
+#laptopram,
+#cpustream,
+#price {
+  height: 60px;
+  border: 1.8px solid blue;
+  border-radius: 8px;
+}
+#laptopname {
   height: 60px;
   border: 1.8px solid blue;
   border-radius: 8px;
@@ -104,7 +109,16 @@ body {
   background-color: #d9d9d9;
   border-radius: 10px;
 }
+.warning {
+  position: absolute;
+  top: 260px;
+  left: 670px;
+  display: none;
+}
 .menu1value {
+  background-color: white;
+}
+.menu2value {
   background-color: white;
 }
 #menu2 {
@@ -162,10 +176,12 @@ body {
   left: 70%;
 }
 #myfile {
-  width: 100%;
+  width: 878px;
+  margin: 0 auto;
   height: 423px;
   border-radius: 18px;
   background-color: #f6f6f6;
+  margin-top: 20px;
 }
 #menu3 {
   width: 380px;
@@ -302,6 +318,20 @@ section div span {
   height: 76px;
   font-size: 20px;
   color: #4386a9;
+  position: absolute;
+  top: 307px;
+  left: 600px;
+}
+#button-upload {
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #62a1eb;
+  position: absolute;
+  top: 407px;
+  left: 580px;
 }
 .marginleft100px {
   margin-left: 100px;
