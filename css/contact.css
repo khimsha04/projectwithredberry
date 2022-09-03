@@ -11,12 +11,13 @@
   justify-content: space-between;
   align-items: center;
 }
-body {
+.contact-body {
   width: 100%;
   max-width: 1920px;
   background-color: #dddddd;
 }
-.ellipse1 {
+.ellipse1,
+.ellipse0 {
   width: 53px;
   height: 53px;
   background-color: #d9d9d9;
@@ -100,6 +101,12 @@ body {
 .minsimbols {
   font-size: 14px;
   color: gray;
+}
+.oneandtwo {
+  position: absolute;
+  left: 540px;
+  top: 134px;
+  display: none;
 }
 #menu1 {
   width: 100%;
