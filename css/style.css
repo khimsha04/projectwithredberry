@@ -9,9 +9,22 @@
 button:hover {
   color: pink;
 }
-a:hover {
-  color: pink;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.invalid {
+  color: red !important;
+}
+.invalid-border {
+  border: 1px solid red !important;
+}
+
 .d-flexcenter {
   display: flex;
   justify-content: center;
