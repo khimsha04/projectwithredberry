@@ -1,0 +1,67 @@
+@media (max-width: 580px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    max-width: 390px;
+  }
+  .info {
+    display: none;
+  }
+  .d-flexcenter {
+    display: block;
+    margin-top: -45px;
+    margin-left: 90px;
+  }
+  .ellipse1 {
+    width: 53px;
+    height: 53px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 50%;
+    margin-left: 0px;
+  }
+  .hoverblackline2,
+  .logo-last {
+    display: none;
+  }
+  .form-file,
+  #button-upload {
+    left: 100px;
+  }
+  .displayblock {
+    display: block;
+  }
+  #myfile {
+    width: 360px;
+  }
+
+  .form2 {
+    height: 2500px;
+  }
+  .from-container {
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+    margin-left: 30px;
+  }
+  .save-button {
+    right: 8%;
+    top: 2500px;
+  }
+  .back {
+    top: 2517px;
+    left: 25px;
+  }
+  .mediawiidth {
+    width: 320px;
+  }
+  #menu3,
+  #menu4,
+  #CPU-S,
+  #cpustream,
+  .input-field-memory,
+  .memory {
+    width: 320px;
+  }
+}

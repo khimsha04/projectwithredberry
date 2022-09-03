@@ -16,6 +16,11 @@
   max-width: 1920px;
   background-color: #dddddd;
 }
+.blogbody-container {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #dddddd;
+}
 .ellipse1,
 .ellipse0 {
   width: 53px;
@@ -31,13 +36,14 @@
   position: relative;
 }
 .hoverblackline {
-  position: absolute;
+  /* position: absolute;
   left: 490px;
-  top: 134px;
+  top: 134px; */
   width: 134px;
   height: 2px;
   background-color: black;
   opacity: 1;
+  margin-left: 10px;
 }
 
 .hoverblackline2 {
@@ -55,8 +61,7 @@
   margin: 0 auto;
 }
 .form {
-  width: 100%;
-  max-width: 1226px;
+  width: 1226px;
   height: 973px;
   border-radius: 18px;
   background-color: #ffffff;
@@ -179,8 +184,8 @@
   border: none;
   border-radius: 10px;
   position: absolute;
-  top: 150%;
-  left: 70%;
+  margin-top: -200px;
+  margin-left: 950px;
 }
 #myfile {
   width: 878px;

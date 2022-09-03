@@ -67,7 +67,7 @@
     display: block;
   }
   .pc-computer {
-    width: 358px;
+    width: 330px;
     height: 191px;
     margin-top: 30px;
   }
@@ -98,6 +98,7 @@
   }
   .otherinfomain {
     max-width: 360px;
+    margin-left: 30px;
   }
   .container-value1 {
     width: 100px;
@@ -109,6 +110,7 @@
   }
   .contact-body {
     background-color: white;
+    width: 100%;
   }
   .displayblock {
     display: block;
@@ -117,9 +119,9 @@
     display: none;
   }
   .next {
-    position: absolute;
-    top: 1000px;
-    left: 130px;
+    font-size: 25px;
+    margin-left: 125px;
+    margin-top: -130px;
   }
   .from-container {
     width: 100%;
@@ -136,6 +138,14 @@
     padding-top: 50px;
     width: 100%;
     max-width: 320px;
+  }
+  .form {
+    width: 360px;
+    height: 973px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    margin-top: 42px;
+    margin-left: 30px;
   }
   .info {
     width: 179px;
