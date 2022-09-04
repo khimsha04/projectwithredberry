@@ -76,3 +76,21 @@ document.addEventListener(
   },
   false
 );
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://pcfy.redberryinternship.ge/api/laptops");
+    xhr.onloadend = function () {
+      let response = JSON.parse(xhr.response);
+      console.log(response);
+    };
+    xhr.setRequestHeader(
+      "Authorization",
+      "Bearer 38289d30bb6ae45f473c7273741dd54f"
+    );
+    xhr.send();
+  },
+  false
+);
