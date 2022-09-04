@@ -57,8 +57,25 @@ saveButton.addEventListener("click", function () {
   let laptopNameValue = laptopName.value;
   let cpuValue = cpu.value;
   let memoryValue = memory.value;
-  if (checkboxValue == 0) {
-    showErrorMessage(checkbox);
+  let cpuStreamValue = cpuStream.value;
+  let cpuCoreValue = cpuCore.value;
+  let laptopRamValue = laptopRam.value;
+  let dayBuyValue = dayBuy.value;
+  let priceValue = price.value;
+  if (!priceValue == Number || priceValue.length < 2) {
+    showErrorMessage(price);
+    isVallid = false;
+  }
+  if (laptopRamValue.length < 2) {
+    showErrorMessage(laptopRam);
+    isVallid = false;
+  }
+  if (cpuCoreValue.length < 2) {
+    showErrorMessage(cpuCore);
+    isVallid = false;
+  }
+  if (cpuStreamValue.length < 2) {
+    showErrorMessage(cpuStream);
     isVallid = false;
   }
   if (cpuValue == -1) {
@@ -87,7 +104,7 @@ function showErrorMessage(input) {
     input.parentElement.children[2].classList.add("invalid");
   }
 }
-console.log(input.classList.add("invalid-border"));
+
 function hideErrorMessages() {
   let elements = document.querySelectorAll(".invalid-border,.invalid");
   for (let i = 0; i < elements.length; i++) {
