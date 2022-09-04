@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style: none;
   color: black;
+  font-family: HelveticaNeue;
 }
 .d-flex {
   display: flex;
@@ -90,6 +91,9 @@
   height: 60px;
   border: 1.8px solid blue;
   border-radius: 8px;
+}
+#username input:active {
+  outline: none;
 }
 #laptopname {
   height: 60px;

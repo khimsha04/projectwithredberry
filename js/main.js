@@ -40,7 +40,7 @@ const alfabet = [
   "ჯ",
   "ჰ",
 ];
-
+console.log(username);
 nextButton.addEventListener("click", function () {
   hideErrorMessages();
   let usernameValue = username.value;
@@ -58,6 +58,7 @@ nextButton.addEventListener("click", function () {
     telNumberValue.startsWith("995") && telNumberValue.length == 12;
 
   let isVallid = true;
+
   if (usernameValue.length < 3 || !isAlfabetVallid(usernameValue)) {
     showErrorMessage(username);
     isVallid = false;
@@ -112,3 +113,43 @@ function isAlfabetVallid(stringValue) {
   }
   return true;
 }
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://pcfy.redberryinternship.ge/api/teams");
+    xhr.onloadend = function () {
+      let response = JSON.parse(xhr.response);
+      for (i = 0; i < response.data.length; i++) {
+        let tempdocument = document.createElement("option");
+        tempdocument.classList.add("menu1value");
+        tempdocument.value = response.data[i].id;
+        tempdocument.innerText = response.data[i].name;
+        team.append(tempdocument);
+      }
+    };
+    xhr.send();
+  },
+  false
+);
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://pcfy.redberryinternship.ge/api/positions");
+    xhr.onloadend = function () {
+      let response = JSON.parse(xhr.response);
+      for (i = 0; i < response.data.length; i++) {
+        let tempdocument = document.createElement("option");
+        tempdocument.classList.add("menu1value");
+        tempdocument.value = response.data[i].id;
+        tempdocument.innerText = response.data[i].name;
+        position.append(tempdocument);
+      }
+    };
+    xhr.send();
+  },
+  false
+);

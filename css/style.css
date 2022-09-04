@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style: none;
   color: black;
+  font-family: HelveticaNeue;
 }
 button:hover {
   color: pink;

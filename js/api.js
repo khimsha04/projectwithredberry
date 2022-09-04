@@ -1,48 +1,11 @@
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://pcfy.redberryinternship.ge/api/teams");
-    xhr.onloadend = function () {
-      let response = JSON.parse(xhr.response);
-      for (i = 0; i < response.data.length; i++) {
-        let tempdocument = document.createElement("option");
-        tempdocument.classList.add("menu1value");
-        tempdocument.value = response.data[i].id;
-        tempdocument.innerText = response.data[i].name;
-        team.append(tempdocument);
-      }
-    };
-    xhr.send();
-  },
-  false
-);
-
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://pcfy.redberryinternship.ge/api/positions");
-    xhr.onloadend = function () {
-      let response = JSON.parse(xhr.response);
-      for (i = 0; i < response.data.length; i++) {
-        let tempdocument = document.createElement("option");
-        tempdocument.classList.add("menu1value");
-        tempdocument.value = response.data[i].id;
-        tempdocument.innerText = response.data[i].name;
-        position.append(tempdocument);
-      }
-    };
-    xhr.send();
-  },
-  false
-);
-
 // document.addEventListener(
 //   "DOMContentLoaded",
 //   function () {
 //     let xhr = new XMLHttpRequest();
-//     xhr.open("GET", "https://pcfy.redberryinternship.ge/api/brands");
+//     xhr.open(
+//       "GET",
+//       "https://pcfy.redberryinternship.ge/api/laptops?token=684f505aeb82cda5c2f1d54da4ffb8ef"
+//     );
 //     xhr.onloadend = function () {
 //       let response = JSON.parse(xhr.response);
 //       for (i = 0; i < response.data.length; i++) {
@@ -50,26 +13,7 @@ document.addEventListener(
 //         tempdocument.classList.add("menu1value");
 //         tempdocument.value = response.data[i].id;
 //         tempdocument.innerText = response.data[i].name;
-//         brands.append(tempdocument);
-//       }
-//     };
-//     xhr.send();
-//   },
-//   false
-// );
-// document.addEventListener(
-//   "DOMContentLoaded",
-//   function () {
-//     let xhr = new XMLHttpRequest();
-//     xhr.open("GET", "https://pcfy.redberryinternship.ge/api/cpus");
-//     xhr.onloadend = function () {
-//       let response = JSON.parse(xhr.response);
-//       for (i = 0; i < response.data.length; i++) {
-//         let tempdocument = document.createElement("option");
-//         tempdocument.classList.add("menu2value");
-//         tempdocument.value = response.data[i].id;
-//         tempdocument.innerText = response.data[i].name;
-//         cpu.append(tempdocument);
+//         team.append(tempdocument);
 //       }
 //     };
 //     xhr.send();
@@ -81,16 +25,47 @@ document.addEventListener(
 //   "DOMContentLoaded",
 //   function () {
 //     let xhr = new XMLHttpRequest();
-//     xhr.open("GET", "https://pcfy.redberryinternship.ge/api/laptops");
+//     xhr.open(
+//       "GET",
+//       "https://pcfy.redberryinternship.ge/api/laptops?token=684f505aeb82cda5c2f1d54da4ffb8ef&id=" +
+//         1
+//     );
 //     xhr.onloadend = function () {
 //       let response = JSON.parse(xhr.response);
 //       console.log(response);
 //     };
-//     xhr.setRequestHeader(
-//       "Authorization",
-//       "Bearer 38289d30bb6ae45f473c7273741dd54f"
-//     );
 //     xhr.send();
+//   },
+//   false
+// );
+
+// document.addEventListener(
+//   "DOMContentLoaded",
+//   function () {
+//     let xhr = new XMLHttpRequest();
+//     xhr.open(
+//       "POST",
+//       "https://pcfy.redberryinternship.ge/api/laptops?token=684f505aeb82cda5c2f1d54da4ffb8ef"
+//     );
+//     xhr.onloadend = function () {
+//       let response = JSON.parse(xhr.response);
+//       for (i = 0; i < response.data.length; i++) {
+//         let tempdocument = document.createElement("option");
+//         tempdocument.classList.add("menu1value");
+//         tempdocument.value = response.data[i].id;
+//         tempdocument.innerText = response.data[i].name;
+//         team.append(tempdocument);
+//       }
+//     };
+//     let leptop = {
+//       name: "zuka",
+//       surname: "khimsha",
+//       team_id: 1,
+//       position_id: 1,
+//       phone_number: "995598363007",
+//       email: "zuka@redberry.ge",
+//     };
+//     xhr.send(leptop);
 //   },
 //   false
 // );
